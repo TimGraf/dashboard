@@ -1,4 +1,13 @@
-# dashboard
+# Dashboard
+
+A dashboard front end using:
+
+[Vue](https://vuejs.org/)
+[Vuetify](https://vuetifyjs.com/en/introduction/why-vuetify/)
+
+Created with the Vue CLI
+
+[Vue CLI](https://cli.vuejs.org/)
 
 ## Project setup
 ```
