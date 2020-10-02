@@ -11,7 +11,7 @@ export default {
   },
   created: async function() {
     // Example of calling the globally available user API
-    const userData = await this.userApi.getUsers();
+    const userData = await this.api.user.getUsers();
     console.log(userData);
   }
 };

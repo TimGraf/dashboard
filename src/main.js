@@ -3,12 +3,12 @@ import "./plugins/axios";
 import App from "./App.vue";
 import router from "./router";
 import vuetify from "./plugins/vuetify";
-import UserApi from "./api/user";
+import api from "./api/api";
 
 Vue.config.productionTip = false;
 
 // Make the api globally available to components
-Vue.prototype.userApi = UserApi;
+Vue.prototype.api = api;
 
 new Vue({
   router,
