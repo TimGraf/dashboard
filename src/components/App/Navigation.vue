@@ -8,10 +8,10 @@
     <v-list-item>
       <v-list-item-content>
         <v-list-item-title class="title">
-          Merlin
+          {{ AppName }}
         </v-list-item-title>
         <v-list-item-subtitle>
-          Dashboard
+          {{ Subtitle }}
         </v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
@@ -34,6 +34,8 @@ export default {
   name: "Navigation",
   data: () => {
     return {
+      AppName: "Appliation",
+      Subtitle: "Dashboard",
       items: [
         { title: "Home", icon: "mdi-home", to: "/" },
         { title: "Dashboard", icon: "mdi-view-dashboard", to: "dashboard" },
