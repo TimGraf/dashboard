@@ -4,7 +4,7 @@ const apiRootUrl = "https://reqres.in";
 
 // Just a sample api call for reference
 export default {
-  getUsers() {
-    return axios.get(`${apiRootUrl}/api/users?page=1`);
+  getUsers(page, perPage) {
+    return axios.get(`${apiRootUrl}/api/users?page=${page}&per_page${perPage}`);
   }
 };
