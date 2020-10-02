@@ -5,28 +5,37 @@
 </style>
 <template>
   <v-app>
-    <v-app-bar class="app-bar" app color="primary" dark>
-      <v-spacer></v-spacer>
+    <v-navigation-drawer app>
+      <Navigation />
+    </v-navigation-drawer>
+    <v-app-bar app>
+      <AppBar />
     </v-app-bar>
-    <Navigation />
-    <v-content>
-      <router-view />
-    </v-content>
+    <v-main>
+      <Content />
+    </v-main>
+    <v-footer inset app>
+      <Footer />
+    </v-footer>
   </v-app>
 </template>
 
 <script>
+import AppBar from "./components/App/AppBar";
 import Navigation from "./components/App/Navigation";
+import Content from "./components/App/Content";
+import Footer from "./components/App/Footer";
 
 export default {
   name: "App",
-
   components: {
-    Navigation
+    AppBar,
+    Navigation,
+    Content,
+    Footer
   },
-
-  data: () => ({
-    //
-  })
+  data: () => {
+    return {};
+  }
 };
 </script>
