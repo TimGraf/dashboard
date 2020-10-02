@@ -2,8 +2,10 @@
 
 A dashboard front end using:
 
-[Vue](https://vuejs.org/)
-[Vuetify](https://vuetifyjs.com/en/introduction/why-vuetify/)
+* [Vue](https://vuejs.org/)
+* [Vuetify](https://vuetifyjs.com/en/introduction/why-vuetify/)
+* [Lodash](https://lodash.com/)
+* [Axios](https://github.com/axios/axios)
 
 Created with the Vue CLI
 
